@@ -123,26 +123,9 @@ chrome.browserAction.onClicked.addListener(function(tab){
 				//this way they an go back and reference previous site more easily (simply switch tabs)
 				chrome.tabs.create({url: related});
 		//		navigate("https://www.google.com/search?q="+new_title);
-			});/*
-			if(choice=="images"){
-				var related="http://www.google.com/images?q=";
-			}
-			else if (choice=="video"){
-				var related="http://www.google.com/videos?q=";
-			}
-			else{
-				//again, default to web
-				var related="https://www.google.com/search?q=";
-				//var related="https://www.google.com/images?q=";
-			}
-			
-			related+=new_title;
-			//open new tab and search!\
-			//if we wanted to reload current tab we could use navigate function
-			//however, I chose to open a new tab instead for user convenience
-			//this way they an go back and reference previous site more easily (simply switch tabs)
-			chrome.tabs.create({url: related});
-	//		navigate("https://www.google.com/search?q="+new_title);*/
+			});
+//			chrome.tabs.create({url: related});
+	//		navigate("https://www.google.com/search?q="+new_title);
 			})//end of function
 			
 			
